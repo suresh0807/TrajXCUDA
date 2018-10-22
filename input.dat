@@ -1,0 +1,122 @@
+####GENERAL OPTIONS:
+
+#scope             		bulk-interface
+scope             		bulk
+#element_1         		O                         #all/symbol/water(for VDOS)
+#element_2         		O
+skip_frames       		2
+cell_type         		orthorhombic
+metal_species			Cu
+plot               		all                            #int,bulk,all
+#max_frames			0
+
+#compute           		density
+#element_1         		O
+#max_bond_distance 		10.0
+#make_grid         		30 1 30
+#average_positions 		yes
+#vacuum_direction  		z
+#xfarbe_symbol     		1
+#xfarbe_size       		0.2
+#xfarbe_color      		20
+
+
+#compute    				exchange
+#max_bond_distance			5.5
+#make_grid	              		1 1 100
+#set_max         	       		yes
+#set_maxz               		40.0
+#set_minz	               		10.0
+#vacuum_direction	       		z
+
+
+#compute           		density-top
+#element_1         		O
+#atoms_between     
+#make_grid         		1 1 1000
+#average_positions 		yes
+#vacuum_direction  		z
+#xfarbe_symbol     		1
+#xfarbe_size       		0.2
+#xfarbe_color      		20
+
+#compute           		densityvelocity
+#element_1         		O
+#make_grid         		1 1 1000
+#average_positions 		yes
+#vacuum_direction  		z
+#xfarbe_symbol     		1
+#xfarbe_size       		0.2
+#xfarbe_color      		20
+#read_velocities   		yes
+
+
+#compute           		rdf
+#element_1         		O
+#element_2         		O
+#rdf_bins          		100
+#rdf_max_rad       		8.0
+#rdf_metal_exclude 		Cu 11.8
+#rdf_for				bulk
+#max_bond_distance		6.5
+#max_frames			20000
+
+
+
+#compute            		O-fragments
+#max_bond_distance  		1.10
+
+
+
+#compute                         percentage-coverage
+#surface_element                 Cu
+#adsorbate_element               O
+#equilibrium_metal_bond_distance 2.53
+#metal_coordination_number       12 4
+#max_bond_distance               5.5
+
+
+#compute                	diffusion-coefficient
+#unwrap_traj            	yes
+#element_1              	O
+#msd_skip_restarts      	100
+#msd_timestep_fs        	0.25
+#msd_lookback_ps        	10
+
+
+  
+#compute                		VDOS
+#read_velocities        		yes
+#msd_skip_restarts      		1000
+#msd_timestep_fs        		0.25
+#msd_lookback_ps        		0.5
+#max_frames			4000
+#max_bond_distance		6.5
+#msd_for				all
+
+
+
+#compute                	Z-dist
+#element_1              	O
+#make_grid              	1 1 1000
+#set_max                	yes
+#set_maxz               	40.0
+#set_minz               	10.0
+#vacuum_direction       	z
+
+compute                	Hbonds
+element_1              	H
+element_2              	O
+make_grid              	1 1 1000
+set_max                	yes
+set_maxz               	40.0
+set_minz               	10.0
+vacuum_direction       	z
+max_bond_distance      	2.1
+Hbond_angle_dev		2.61
+HB_skip_restarts   	100
+HB_timestep_fs     	0.25
+HB_lookback_ps     	0.5
+include_transient_bonds	yes
+HB_for			all                #int/bulk/all
+bondist_int_bulk	5.0

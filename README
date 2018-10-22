@@ -1,0 +1,41 @@
+1. Compiling:
+-------------_
+
+Install latest drivers for your graphic cards.
+
+make sure latest CUDA sdk/runtime is installed (nvcc).
+gnu C/C++ compilers are "not" necessary. 
+
+If your CUDA capable GPU is of compute capability 2 (Fermi), you can use the makefile as such.
+If not please replace the following tag in the Makefile based on the architecture.
+
+'-arch compute_20' to '-arch compute_30' or '-arch compute_10'
+
+
+If everything is set correctly. typing
+
+make
+
+will build the program TrajXCUDA.cux in the same directory.
+
+________________________________________________________________________________________________
+
+
+2. Running the program:
+-----------------------_
+
+The program needs different input files based on what you want to use it for. 
+The mandatory file is 'input.dat'. You can find a copy of it in example/ folder.
+This tells TrajXCUDA what to compute. 
+
+The next main input file is the trajectory itself in XYZ format named 'input.xyz'.
+
+When all input are ready, just type
+
+./TrajXCUDA.cux 
+
+________________________________________________________________________________________________________
+
+3. Example:
+
+An example 'input.xyz' and 'input.dat' are provided in the example/ folder
