@@ -1,0 +1,8 @@
+compute                		VDOS
+read_velocities        		yes
+msd_skip_restarts      		1000
+msd_timestep_fs        		0.25
+msd_lookback_ps        		0.5
+max_frames			4000
+max_bond_distance		6.5
+msd_for				all

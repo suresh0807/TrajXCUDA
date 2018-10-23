@@ -1,0 +1,18 @@
+scope 				bulk-interface
+compute           		density
+element_1         		O
+max_bond_distance 		5.0
+make_grid         		30 1 60
+average_positions 		no
+vacuum_direction  		z
+density_plot			yes
+filter_density			no
+set_max_y                       yes
+set_maxy                        5.0
+set_miny                        7.0
+set_max_z                       no
+set_maxz                        17
+set_minz                        30
+set_max_x                       no
+set_maxx                        17
+set_minx                        30

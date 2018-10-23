@@ -1,0 +1,9 @@
+compute           		rdf
+element_1         		@@elt1@@
+element_2         		@@elt2@@
+rdf_bins          		250
+rdf_max_rad       		10.0
+rdf_metal_exclude 		Cu 11.8
+rdf_for				@@what@@                  #all,int,bulk
+max_bond_distance		@@bondist@@
+rdf_between			no 20.0 30.0 

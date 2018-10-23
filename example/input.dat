@@ -1,0 +1,23 @@
+#diffusion
+compute diffusion-coefficient 
+unwrap_traj no
+element_1 O
+#element_2
+#surface_metal_element
+#max_bond_distance
+#surface_element
+#adsorbate_element
+#make_grid
+#atoms_between
+#vacuum_direction
+#rdf_bins
+#equilibrium_metal_bond_distance
+#metal_coordination_number
+#skip_frames
+msd_skip_restarts 10
+msd_timestep_fs 100
+msd_lookback_ps 10
+#average_positions
+#xfarbe_symbol
+#xfarbe_size
+#xfarbe_color

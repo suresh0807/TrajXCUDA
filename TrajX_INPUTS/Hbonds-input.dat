@@ -1,0 +1,22 @@
+compute                 Hbonds
+element_1               H
+element_2               O
+make_grid               1 1 1000
+set_max_z               yes 
+set_maxz                60.0
+set_minz                0.0
+vacuum_direction        z
+HB_criterium_set	OOH-OO                     #OOH-OO(Matti)/OHO-OH(Alex)
+HB_histograms		no
+max_bond_distance       3.2
+max_O_O                 3.5                       #normal=3.5/ SSP=3.0
+Hbond_angle_dev         0.5235                    #normal=0.5235/ SSP=0.3490
+HBlifetime		no
+HB_skip_restarts        1
+HB_timestep_fs          100 
+HB_lookback_ps          20
+HB_for                  @@HB@@                           #int,bulk,all
+HB_crossing             yes
+HB_lifestyle		@@style@@                       #intermittent/continuous/transient time
+bondist_int_bulk	@@bondist@@
+transient_HB_definition no

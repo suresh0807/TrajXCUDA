@@ -1,0 +1,7 @@
+compute    				exchange
+max_bond_distance			5.5                         #dist from surface +0.5 \AA
+make_grid	              		1 1 100
+set_max         	       		yes
+set_maxz 	              		40.0
+set_minz	               		10.0
+vacuum_direction	       		z

@@ -1,0 +1,23 @@
+compute                	diffusion-coefficient
+unwrap_traj            	yes
+unwrapout		no
+#diffusion_kernel        z-binning  3         #z-binning/binning/long_time(more restarts)
+diffusion_kernel        binning           #z-binning/binning/long_time(more restarts)
+element_1              	@@elt1@@
+msd_skip_restarts      	1
+msd_timestep_fs        	100
+msd_lookback_ps         10
+diffuse_direction       @@xyz@@            #xyz/xy/xz/yz/x/y/z
+msd_for                 @@msd@@            #int/bulk/all/box
+max_bond_distance       @@bondist@@
+
+#Needed when box option is chosen
+set_max_y                       yes
+set_maxy                        12.7
+set_miny                        4.7
+set_max_z                       yes
+set_maxz                        22 
+set_minz                        14 
+set_max_x                       yes
+set_maxx                        14 
+set_minx                        6 

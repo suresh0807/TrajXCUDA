@@ -1,0 +1,16 @@
+#GENERAL OPTIONS:
+
+scope             		bulk                      #bulk/bulk-interface
+#element_1         		O                         #all/symbol/water(for VDOS)
+#element_2         		O
+file_path			input.xyz
+skip_frames       		1
+cell_type         		@cell@
+metal_species			Cu
+plot               		all                            #int,bulk,all
+#max_frames		        @start
+max_frames		        1000
+#start_frame			@end
+start_frame			0
+vacuum_direction		z
+

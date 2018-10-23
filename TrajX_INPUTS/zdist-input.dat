@@ -1,0 +1,7 @@
+compute                	Z-dist
+element_1              	@@elt1@@
+make_grid              	1 1 1000
+set_max_z              	yes
+set_maxz               	60.0
+set_minz               	0.0
+vacuum_direction       	z

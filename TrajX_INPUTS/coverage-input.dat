@@ -1,0 +1,6 @@
+compute                         percentage-coverage
+surface_element                 Cu
+adsorbate_element               @@elt2@@
+equilibrium_metal_bond_distance 2.53                           #Cu-Cu distance (will differ for 111,100 and 110)
+metal_coordination_number       12 4                           #max/min
+max_bond_distance               2.5

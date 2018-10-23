@@ -1,0 +1,12 @@
+compute                 Adatoms
+element_1               Cu
+element_2               Cu
+atoms_between           7.5 9.0 #surface atoms
+vacuum_direction        z
+max_bond_distance       5.0
+choose_atoms		Cu z yes 0 5 Cu #from surface copper atoms
+
+HB_skip_restarts        1
+HB_timestep_fs          100 
+HB_lookback_ps          50
+HB_lifestyle            transient 5       #intermittent/continuous/transient time

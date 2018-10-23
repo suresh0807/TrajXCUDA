@@ -1,0 +1,16 @@
+compute                 residenttime
+#element_1               O
+atoms_between           @min @max 
+choose_atoms		O z yes 0 @bon Cu #
+#choose_atoms_from	O z no 0 @bon 700 #
+vacuum_direction        z
+HB_skip_restarts        1
+HB_timestep_fs          100 
+HB_lookback_ps          @@lookback@@
+#lifetime_for            @@HB@@                           #int,bulk
+HB_lifestyle		@@style@@                       #intermittent/continuous/transient time
+bondist_int_bulk	@@bondist@@
+
+#residenttime O 1 100 20 int continuous 3.7 
+#residenttime O 1 100 20 int intermittent 3.7 
+#residenttime O 1 100 20 int transient 3.7 

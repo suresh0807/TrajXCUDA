@@ -1,0 +1,15 @@
+compute           		density-top
+#element_1         		@@elt@@
+atoms_between                   @@as@@  @@ae@@
+make_grid         		50 50 1	
+average_positions 		no
+vacuum_direction  		z
+choose_atoms                    O z yes @st@ @ed@  Cu
+#choose_atoms_from              O z yes @st@ @ed@  index
+#choose_atoms                    O z yes 2.6 3.0 Cu
+#choose_atoms                    O z .yes 3.0 3.7 Cu
+#dipole_orient			yes 1.10     #max OH distance in water
+#atop_orient			yes @ed@     #max O-Cu distance
+#atop_orient			yes 3.7     #max O-Cu distance
+#atop_orient			yes 3.7     #max O-Cu distance
+#density_plot			yes
