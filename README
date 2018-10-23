@@ -1,7 +1,7 @@
 1. Compiling:
 -------------_
 
-Install latest drivers for your graphic cards.
+Install latest drivers for your Nvidia graphic cards.
 
 make sure latest CUDA sdk/runtime is installed (nvcc).
 gnu C/C++ compilers are "not" necessary. 
